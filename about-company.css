@@ -15,6 +15,7 @@ body {
   text-decoration: none;
 }
 
+/*HEADER*/
 ul,
 li {
   padding: 0;
@@ -25,6 +26,10 @@ header a {
   color: #006986;
 }
 
+.menu {
+  display: flex;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -32,11 +37,12 @@ header a {
 }
 
 .title {
-  margin-top: 140px;
+  margin-top: 96px;
   margin-bottom: 40px;
   text-align: center;
   font-family: "Museo Sans Cyrl 500", sans-serif;
   font-size: 32px;
+  line-height: 120%;
   color: #00465e;
 }
 
@@ -107,8 +113,6 @@ header a {
 }
 
 .nav {
-  background-color: #ffffff;
-
   display: flex;
   align-items: center;
   padding-top: 30px;
@@ -124,40 +128,12 @@ header a {
   color: #00465e;
 }
 
-#main-title {
-  margin-top: 170px;
-  max-width: 792px;
-  width: 792px;
-  font-family: "Museo Sans Cyrl 500", sans-serif;
-  font-size: 64px;
-  line-height: 120%;
-  color: #00465e;
-}
-
 .header-content {
   padding-top: 30px;
   max-width: 389px;
   font-size: 18px;
   line-height: 140%;
   color: #006986;
-}
-
-@keyframes ani {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.car {
-  position: absolute;
-  left: 200px;
-  opacity: 0;
-  animation: ani 400ms forwards;
-  transition: left 400ms cubic-bezier(0, 0, 1, 1);
-  top: 417px;
 }
 
 .button {
@@ -190,378 +166,151 @@ header a {
   transform: translateZ(-10px);
 }
 
-#main-button {
-  margin-top: 160px;
-  width: 260px;
-  height: 69px;
-  background: #4c8fd0;
-  animation: scale 5s infinite;
-}
-
-.second-block {
-  background-image: url("images/Tobolsk2-with-Linde-reference-resized 1.png");
-  background-size: 1920px 100%;
-  background-position: center;
-}
-
-.about-items {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 24px;
-  padding: 0;
-}
-
-.about-item {
-  grid-column: span 1;
-}
-
-.about-item-thumb {
-  display: block;
-  align-items: center;
-  margin-left: 109px;
-  margin-bottom: 15px;
-}
-
-.about-item-img {
-  text-align: center;
-}
-
-.about-item-text {
-  font-family: "Museo Sans Cyrl 500", sans-serif;
-  font-size: 30px;
-  line-height: 120%;
-  text-align: center;
-
-  /* НАБОРНЫЙ */
-
+/*menu-nav*/
+.menu-nav {
+  font-size: 14px;
+  margin-top: 72px;
+  margin-bottom: 40px;
   color: #006986;
 }
 
-.about-item-desc {
-  font-family: "Museo Sans Cyrl 300", sans-serif;
-  font-size: 18px;
-  line-height: 140%;
-
-  text-align: center;
-
+.menu-nav span {
   color: #006986;
 }
 
-.boxes {
-  display: grid;
-  grid-template-columns: 306px 306px 0;
-  grid-column-gap: 0;
-  padding: 0;
+.menu-nav a {
+  text-decoration: none;
 }
 
-.box {
-  grid-column: span 1;
-  margin-left: 210px;
-  width: 180px;
-  height: 180px;
-  background: #1d7f9d;
-  border-radius: 30px;
+/*menu-nav*/
 
-  position: relative;
-}
+/*HEADER*/
 
-.inside-text {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-family: "Museo Sans Cyrl 300", sans-serif;
-  font-size: 18px;
-  line-height: 140%;
-  text-align: center;
-  color: #ffffff;
-}
-
-.inside-circle {
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  left: 11px;
-  top: 11px;
-  border-radius: 30px;
-  background: #ffffff;
-}
-
-#inside-1 {
-  margin-left: 13px;
-  position: absolute;
-  color: #00465e;
-  font-size: 18px;
-  top: 50%;
-  text-align: center;
-  transform: translateY(-50%);
-}
-
-.inside-circle-text {
-  position: absolute;
-  color: #00465e;
-  font-size: 18px;
-  top: 50%;
-  text-align: center;
-  margin-left: 12px;
-  transform: translateY(-50%);
-}
-
-.cards-isp {
-  margin-right: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 24px;
-  padding: 0;
-}
-
-.card-isp {
-  position: relative;
-  width: 384px;
-  height: 473px;
-  background: #1d7f9d;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.zag-card {
-  position: absolute;
-  font-family: "Museo Sans Cyrl 500", sans-serif;
-  font-size: 18px;
-  line-height: 140%;
-  text-align: center;
-  color: #ffffff;
-}
-
-#zag-card-1 {
-  margin-left: 23px;
-  margin-top: 30px;
-  max-width: 338px;
-}
-
-#zag-card-2 {
-  margin-left: 75px;
-  margin-top: 31px;
-  max-width: 234px;
-}
-
-#zag-card-3 {
-  margin-left: 84px;
-  margin-top: 42px;
-  max-width: 216px;
-}
-
-.menu-card {
-  position: absolute;
-  font-family: "Museo Sans Cyrl 300", sans-serif;
-  color: #ffffff;
-}
-
-#menu-card-1 {
-  margin-top: 102px;
-  margin-left: 104px;
-  width: 192px;
-  height: 92px;
-}
-
-#menu-card-2 {
-  margin-top: 102px;
-  margin-left: 61px;
-  width: 301px;
-  height: 92px;
-}
-
-#menu-card-3 {
-  margin-top: 102px;
-  margin-left: 109px;
-  width: 206px;
-  height: 92px;
-}
-
-.circle {
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  margin-top: 216px;
-  margin-left: -66px;
-  border-radius: 400px;
-  overflow: hidden;
-}
-
-.card-img {
-  position: absolute;
-  width: 100%;
-  height: 65%;
-  overflow: hidden;
-}
-
-.done-work-cards {
-  display: flex;
-}
-
-.done-work-card {
-  position: relative;
-  margin-left: 24px;
-  width: 384px;
-  height: 387px;
-  background: #ffffff;
-  border-radius: 10px;
-  border: 1px solid #1d7f9d;
-}
-
-.zag-dwc {
-  position: absolute;
-  margin-bottom: 0;
-  margin-top: 36px;
-  margin-left: 36px;
-  font-family: "Museo Sans Cyrl 500", sans-serif;
-  font-size: 18px;
-  line-height: 140%;
-  color: #006986;
-  max-width: 163px;
-}
-
-.done-work-card span {
-  position: absolute;
-  margin-top: 196px;
-  margin-left: 36px;
-  font-family: "Museo Sans Cyrl 300", sans-serif;
-  line-height: 140%;
-  font-size: 16px;
-  color: #006986;
-  max-width: 313px;
-}
-
-.img-rect {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  right: 19px;
-  top: 19px;
-  overflow: hidden;
-}
-
-.partners {
-  margin-right: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 24px;
-  padding: 0;
-}
-
-#sibur {
-  margin-top: 44px;
-}
-
-.six-block {
+.title {
   margin-top: 96px;
-
-  height: 400px;
-  background-color: #1d7f9d;
-}
-
-.reserve-title {
-  position: absolute;
-  margin-top: 73px;
+  margin-bottom: 40px;
+  text-align: center;
   font-family: "Museo Sans Cyrl 500", sans-serif;
   font-size: 32px;
-  color: #ffffff;
+  line-height: 120%;
+  color: #00465e;
 }
 
-.description {
-  padding-top: 81px;
-  margin-left: 618px;
-  width: 582px;
+#main-title {
+  margin-top: 50px;
+}
+
+.content-about p {
+  margin-left: 25px;
+  width: 587px;
+  height: 291px;
   font-family: "Museo Sans Cyrl 300", sans-serif;
-  font-size: 16px;
-  line-height: 140%;
-  color: #ffffff;
-}
-
-.reserve-form {
-  display: flex;
-  margin-top: 74px;
-  flex-wrap: nowrap;
-}
-
-.reserve-form input,
-textarea {
-  margin-right: 20px;
-  background-color: #1d7f9d;
-  box-sizing: border-box;
-  padding: 22px 25px;
-  width: 282px;
-  height: 69px;
-  border: 1px solid #ffffff;
-  border-radius: 10px;
-  color: #ffffff;
-  font-family: "Museo Sans Cyrl 500", sans-serif;
   font-size: 18px;
-}
-.reserve-form textarea {
-  resize: none;
-}
-.reserve-form textarea::-webkit-scrollbar {
-  display: none;
-}
-input:focus {
-  outline: none;
-  transform: scale(1.05);
-}
-.reserve-form textarea:focus {
-  outline: none;
-  transform: scale(1.05);
-  height: 200px;
-}
-input::placeholder {
-  color: #c6c6c6;
-}
-.reserve-form textarea::placeholder {
-  color: #c6c6c6;
-}
-
-.main-label {
-  border: 1px solid #4c8fd0;
+  line-height: 180%;
   color: #006986;
-  border-radius: 10px;
-  padding: 6px;
-  font-family: "Museo Sans Cyrl 500", sans-serif;
-  font-size: 16px;
-}
-#number-input::-webkit-inner-spin-button {
-  display: none;
 }
 
-#form-button {
-  width: 282px;
-  height: 69px;
-  font-family: "Museo Sans Cyrl 500", sans-serif;
-  font-size: 18px;
-  text-decoration: none;
-  border-width: 0;
-  justify-content: center;
+.content-about {
+  display: flex;
   align-items: center;
-  background: #6fb2cc;
-  color: #fff;
-  border-radius: 0;
-  box-sizing: border-box;
-  transition: all 500ms ease;
 }
 
-#form-button:hover {
-  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.3);
-  transform: translateZ(-10px);
+.block-facts-nav {
+  display: flex;
+  margin-left: 51px;
+}
+
+.block-facts {
+  position: relative;
+  margin-right: 62px;
+  border: 1px solid #1d7f9d;
+  border-radius: 10px;
+  width: 325px;
+  height: 163px;
+  text-align: center;
+}
+
+.block-title {
+  position: absolute;
+  margin-top: 35px;
+  margin-left: 39px;
+  width: 248px;
+  font-family: "Museo Sans Cyrl 500", sans-serif;
+  font-size: 45px;
+  color: #00465e;
+  margin-bottom: 0;
+}
+
+.block-description {
+  position: absolute;
+  margin-top: 104px;
+
+  font-family: "Museo Sans Cyrl 300", sans-serif;
+  font-size: 15px;
+  color: #00465e;
+  line-height: 140%;
+}
+
+.big-block {
+  border: 1px solid #1d7f9d;
+  border-radius: 10px;
+  width: 510px;
+  height: 163px;
+  text-align: center;
+  margin: 60px auto;
+}
+
+.big-block-title {
+  margin-top: 25px;
+  font-family: "Museo Sans Cyrl 500", sans-serif;
+  font-size: 45px;
+  color: #00465e;
+}
+
+.big-block-description {
+  margin-top: 15px;
+  font-family: "Museo Sans Cyrl 300", sans-serif;
+  font-size: 15px;
+  color: #00465e;
+  line-height: 140%;
+}
+
+.myProducts {
+  text-align: center;
+}
+
+.galleria {
+  position: absolute;
+  width: 1200px;
+  height: 700px;
+
+  border-radius: 10px;
+}
+
+.galleria img {
+  object-fit: cover;
+}
+
+#block-description-1 {
+  margin-left: 19px;
+}
+
+#block-description-2 {
+  margin-left: 51px;
 }
 
 /*FOOTER*/
+.footer {
+  margin-top: 96px;
+}
 
 .map-info-block {
-  margin-top: 99px;
-  margin-left: 246px;
   position: relative;
   width: 340px;
   height: 226px;
   background-color: #ffffff;
+  margin-top: 99px;
+  margin-left: 246px;
 }
 
 .info-map-icon {
@@ -737,19 +486,12 @@ input::placeholder {
   color: #ffffff;
   line-height: 140%;
 }
+
 .nav-menu li a:hover {
   border-bottom: 1px solid #ffffff;
 }
 
 /*FOOTER*/
-/* #phone {
-  -moz-appearance: textfield;
-} */
-
-#phone::-webkit-inner-spin-button {
-  display: none;
-}
-
 .popup {
   position: fixed;
   width: 100%;
@@ -809,6 +551,10 @@ input::placeholder {
   color: #4c8fd0;
   font-family: "Museo Sans Cyrl 500", sans-serif;
   font-size: 18px;
+}
+
+#phone::-webkit-inner-spin-button {
+  display: none;
 }
 
 #button-callback {
@@ -884,12 +630,6 @@ body {
 }
 .footer-logo {
   margin-left: 0;
-}
-
-/*  */
-.box {
-  margin-bottom: 126px;
-  position: relative;
 }
 
 @media (max-width: 1232px) {
@@ -970,7 +710,6 @@ body {
     line-height: 40px;
     text-align: center;
   }
-
   .topmenu li .submenu {
     margin: 0;
     position: static;
@@ -990,7 +729,6 @@ body {
     margin-left: 0;
     text-align: center;
   }
-
   #tel {
     margin-left: 0;
     margin-bottom: 24px;
@@ -998,12 +736,9 @@ body {
   #top-button {
     margin-left: 0;
   }
-  .header .container {
-    min-height: 100vh;
-  }
   #main-title {
     margin: 0 auto;
-    margin-top: 27vh;
+    margin-top: 144px;
     max-width: 500px;
     width: auto;
     font-size: 30px;
@@ -1110,210 +845,81 @@ body {
     height: auto;
     line-height: 1.62;
   }
-
-  /* 2 section */
-  .second-block {
-    background-image: none;
-    background-color: #fff;
+  /*  */
+  .content-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .content-about p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 428px;
+    width: auto;
+    height: auto;
+    flex: 1 0 50%;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  #main-img-about {
+    margin: 0 auto;
+    max-width: 50%;
+    padding-right: 40px;
+    display: block;
+    height: auto;
+    flex: 0 1 50%;
   }
   .title {
     max-width: 360px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     margin-top: 90px;
     font-size: 24px;
     font-weight: normal;
     line-height: 120%;
   }
-  .second-block .title:first-of-type {
-    margin-top: 30px;
-  }
-  .about-items {
+
+  .block-facts,
+  .big-block {
+    padding: 25px 15px;
     margin: 0 auto;
-    max-width: 728px;
+    height: auto;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  .about-item {
-    margin-bottom: 42px;
-    width: 282px;
-  }
-  .about-item-img {
-    margin: 0;
-    margin-bottom: 5px;
-    display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-  }
-  .about-item-thumb {
-    margin: 0;
-  }
-  .about-item-text {
-    font-size: 20px;
-    font-weight: normal;
-  }
-  .about-item-desc {
-    margin-top: 10px;
-    font-size: 12px;
-  }
-  .boxes {
-    margin: 0 auto;
-    max-width: 600px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .box {
-    margin: 0;
-    margin-bottom: 30px;
-    max-width: 172px;
-    min-height: 172px;
-    height: auto;
-    flex-basis: 32%;
-  }
-  .inside-text {
-    padding: 10px;
-    font-weight: 300;
-    font-size: 14px;
-  }
-  .partners {
-    margin: 0 auto;
-    max-width: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0;
-  }
-  .partners a {
-    width: 173px;
-    height: 98px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-basis: 173px;
-  }
-  .partners img {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-  #sibur {
-    margin: 0;
-  }
-  .done-work-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .done-work-card {
-    margin: 0;
-    margin-bottom: 30px;
-    padding: 190px 25px 35px;
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-  }
-  .done-work-card span {
-    margin: 0;
-    padding-top: 27px;
-    padding-bottom: 35px;
-    font-size: 14px;
-    font-weight: 300;
-    position: static;
-  }
-  .zag-dwc {
-    top: 35px;
-    margin: 0;
-    font-size: 16px;
-    font-weight: 400;
-  }
-  .cards-isp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-  }
-  .card-isp {
-    margin-bottom: 30px;
-    padding: 40px 0;
-    width: 100%;
-    max-width: 600px;
-    max-height: 464px;
-    display: flex;
-    flex-direction: column;
-  }
-  #zag-card-1,
-  #zag-card-2,
-  #zag-card-3 {
-    margin: 0 auto;
-    margin-bottom: 25px;
-    max-width: 276px;
-  }
-  .zag-card {
-    position: static;
-    margin-bottom: 25px;
-    font-size: 16px;
-    font-weight: 400;
-  }
-  #menu-card-1,
-  #menu-card-2,
-  #menu-card-3 {
-    position: static;
-    margin: 0 auto;
-    width: auto;
-    height: auto;
-    max-width: 276px;
-  }
-  .menu-card li a {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 145.5%;
-  }
-  .six-block {
-    padding: 60px 0;
-    height: auto;
-  }
-  .six-block .container {
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    max-width: 370px;
   }
-  .reserve-title {
-    margin: 0;
-    margin-bottom: 20px;
-    position: static;
-    font-size: 18px;
-    font-weight: 400;
+  .block-facts {
+    max-width: 31%;
   }
-  .description {
+  .block-facts-nav {
+    margin-left: 0;
+    margin-bottom: 30px;
+    justify-content: space-around;
+  }
+  .block-title {
     margin: 0;
-    padding: 0;
+    margin-bottom: 15px;
     width: auto;
     position: static;
-    font-size: 16px;
   }
-  .reserve-form {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .block-description {
+    margin: 0;
+    min-height: 42px;
+    position: static;
+    text-align: center;
   }
-  .reserve-form input,
-  .reserve-form textarea {
-    margin-right: 0;
+  #block-description-1,
+  #block-description-2,
+  #block-description-3 {
+    margin: 0;
   }
-  .reserve-form input {
-    margin-bottom: 35px;
+  .myProducts .container {
+    margin: 0 -20px;
   }
-  .reserve-form textarea {
-    margin-bottom: 116px;
+  .galleria {
+    max-width: 100%;
+    position: static;
   }
 }
 
@@ -1368,30 +974,34 @@ body {
   .background-container {
     padding-top: 276px;
   }
-
   /*  */
-  .partners {
-    max-width: 361px;
+  .title {
+    margin-bottom: 50px;
   }
-  .about-items {
-    max-width: 282px;
-    display: flex;
+  .menu-nav,
+  #main-img-about {
+    display: none;
+  }
+  .content-about p {
+    width: auto;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .block-facts-nav {
+    margin-bottom: 0;
     flex-direction: column;
     align-items: center;
   }
-  .boxes {
-    max-width: 400px;
-    flex-basis: 49%;
+  .block-facts,
+  .big-block {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 25px 30px;
+    max-width: 325px;
   }
-  .box {
-    flex-basis: 49%;
-  }
-  .done-work-card {
-    max-width: 361px;
-  }
-  .card-isp {
-    width: 100%;
-    max-width: 361px;
+  .big-block-title {
+    margin: 0;
   }
 }
 
@@ -1401,30 +1011,13 @@ body {
   }
   #main-title {
     max-width: 100%;
-    font-size: 22px;
+    font-size: 18px;
   }
   .header-content span {
     max-width: 288px;
     font-size: 12px;
   }
-
-  /*  */
   .title {
-    margin-bottom: 30px;
-    max-width: 240px;
     font-size: 18px;
-  }
-  .about-item {
-    margin-bottom: 30px;
-  }
-  .about-item-text {
-    font-size: 16px;
-  }
-  .boxes {
-    max-width: 361px;
-    justify-content: space-between;
-  }
-  .six-block {
-    padding: 30px 0;
   }
 }
