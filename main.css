@@ -1221,6 +1221,7 @@ body {
     padding: 40px 0;
     width: 100%;
     max-width: 600px;
+    max-height: 464px;
     display: flex;
     flex-direction: column;
   }
