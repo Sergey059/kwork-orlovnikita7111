@@ -26,10 +26,6 @@ header a {
   color: #006986;
 }
 
-.menu {
-  display: flex;
-}
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -45,7 +41,6 @@ header a {
   line-height: 120%;
   color: #00465e;
 }
-
 .topmenu {
   width: 100%;
   display: flex;
@@ -133,6 +128,7 @@ header a {
   max-width: 389px;
   font-size: 18px;
   line-height: 140%;
+
   color: #006986;
 }
 
@@ -146,7 +142,6 @@ header a {
   color: #fff;
   box-sizing: border-box;
   transition: all 500ms ease;
-  font-family: "Museo Sans Cyrl 500", sans-serif;
   font-size: 18px;
 }
 
@@ -166,12 +161,11 @@ header a {
   transform: translateZ(-10px);
 }
 
-/*menu-nav*/
 .menu-nav {
   font-size: 14px;
+  color: #006986;
   margin-top: 72px;
   margin-bottom: 40px;
-  color: #006986;
 }
 
 .menu-nav span {
@@ -181,128 +175,128 @@ header a {
 .menu-nav a {
   text-decoration: none;
 }
-
-/*menu-nav*/
-
 /*HEADER*/
 
-.title {
-  margin-top: 96px;
-  margin-bottom: 40px;
-  text-align: center;
-  font-family: "Museo Sans Cyrl 500", sans-serif;
-  font-size: 32px;
-  line-height: 120%;
-  color: #00465e;
+.content-o-d {
+  display: flex;
 }
-
-#main-title {
-  margin-top: 50px;
-}
-
-.content-about p {
-  margin-left: 25px;
-  width: 587px;
-  height: 291px;
+.description-o-d {
+  width: 478px;
   font-family: "Museo Sans Cyrl 300", sans-serif;
-  font-size: 18px;
-  line-height: 180%;
+  font-size: 16px;
+  line-height: 140%;
   color: #006986;
 }
-
-.content-about {
-  display: flex;
-  align-items: center;
-}
-
-.block-facts-nav {
-  display: flex;
-  margin-left: 51px;
-}
-
-.block-facts {
-  position: relative;
-  margin-right: 62px;
-  border: 1px solid #1d7f9d;
-  border-radius: 10px;
-  width: 325px;
-  height: 163px;
-  text-align: center;
-}
-
-.block-title {
-  position: absolute;
-  margin-top: 35px;
-  margin-left: 39px;
-  width: 248px;
-  font-family: "Museo Sans Cyrl 500", sans-serif;
-  font-size: 45px;
-  color: #00465e;
-  margin-bottom: 0;
-}
-
-.block-description {
-  position: absolute;
-  margin-top: 104px;
-
+.call-o-d {
+  height: 66px;
+  width: 478px;
   font-family: "Museo Sans Cyrl 300", sans-serif;
-  font-size: 15px;
-  color: #00465e;
+  font-size: 16px;
   line-height: 140%;
+  color: #006986;
 }
-
-.big-block {
-  border: 1px solid #1d7f9d;
-  border-radius: 10px;
-  width: 510px;
-  height: 163px;
-  text-align: center;
-  margin: 60px auto;
-}
-
-.big-block-title {
-  margin-top: 25px;
-  font-family: "Museo Sans Cyrl 500", sans-serif;
-  font-size: 45px;
-  color: #00465e;
-}
-
-.big-block-description {
-  margin-top: 15px;
-  font-family: "Museo Sans Cyrl 300", sans-serif;
-  font-size: 15px;
-  color: #00465e;
+.menu-o-d {
+  margin-left: 25px;
+  width: 478px;
+  color: #006986;
   line-height: 140%;
+  margin-bottom: 100px;
+}
+#map-o-d {
+  margin-left: 32px;
 }
 
-.myProducts {
-  text-align: center;
-}
-
-.galleria {
-  position: absolute;
-  width: 1200px;
-  height: 700px;
-
-  border-radius: 10px;
-}
-
-.galleria img {
-  object-fit: cover;
-}
-
-#block-description-1 {
-  margin-left: 19px;
-}
-
-#block-description-2 {
-  margin-left: 51px;
-}
-
-/*FOOTER*/
-.footer {
+.zayavka {
   margin-top: 96px;
+
+  height: 400px;
+  background-color: #1d7f9d;
 }
+
+.reserve-title {
+  position: absolute;
+  margin-top: 73px;
+  font-family: "Museo Sans Cyrl 500", sans-serif;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.description {
+  padding-top: 81px;
+  margin-left: 618px;
+  width: 582px;
+  font-family: "Museo Sans Cyrl 300", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.reserve-form {
+  display: flex;
+  margin-top: 74px;
+  flex-wrap: nowrap;
+}
+
+.reserve-form input,
+textarea {
+  margin-right: 20px;
+  background-color: #1d7f9d;
+  box-sizing: border-box;
+  padding: 22px 25px;
+  width: 282px;
+  height: 69px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: "Museo Sans Cyrl 500", sans-serif;
+  font-size: 18px;
+}
+.reserve-form textarea {
+  resize: none;
+}
+.reserve-form textarea::-webkit-scrollbar {
+  display: none;
+}
+input:focus {
+  outline: none;
+  transform: scale(1.05);
+}
+.reserve-form textarea:focus {
+  outline: none;
+  transform: scale(1.05);
+  height: 200px;
+}
+input::placeholder {
+  color: #c6c6c6;
+}
+.reserve-form textarea::placeholder {
+  color: #c6c6c6;
+}
+#number-input::-webkit-inner-spin-button {
+  display: none;
+}
+
+#form-button {
+  width: 282px;
+  height: 69px;
+  font-family: "Museo Sans Cyrl 500", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  border-width: 0;
+  justify-content: center;
+  align-items: center;
+  background: #6fb2cc;
+  color: #fff;
+  border-radius: 0;
+  box-sizing: border-box;
+  transition: all 500ms ease;
+}
+
+#form-button:hover {
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.3);
+  transform: translateZ(-10px);
+}
+/*FOOTER*/
 
 .map-info-block {
   position: relative;
@@ -310,7 +304,7 @@ header a {
   height: 226px;
   background-color: #ffffff;
   margin-top: 99px;
-  margin-left: 246px;
+  margin-left: 250px;
 }
 
 .info-map-icon {
@@ -342,7 +336,6 @@ header a {
 #infodesc1 {
   margin-top: 52px;
 }
-
 #infodesc2 {
   margin-top: 98px;
 }
@@ -400,7 +393,6 @@ header a {
   margin-top: 39px;
   margin-left: 222px;
 }
-
 #phone-icon {
   position: absolute;
   margin-left: 227px;
@@ -438,7 +430,6 @@ header a {
   margin-top: 62px;
   margin-right: 10px;
 }
-
 .e-mail-desc {
   position: absolute;
   margin-top: 189px;
@@ -472,7 +463,6 @@ header a {
   margin-top: 39px;
   margin-left: 1018px;
 }
-
 .nav-menu {
   position: absolute;
   margin-top: 85px;
@@ -486,11 +476,9 @@ header a {
   color: #ffffff;
   line-height: 140%;
 }
-
 .nav-menu li a:hover {
   border-bottom: 1px solid #ffffff;
 }
-
 /*FOOTER*/
 .popup {
   position: fixed;
@@ -845,16 +833,15 @@ body {
     height: auto;
     line-height: 1.62;
   }
-  /*  */
   .menu-nav {
     margin-top: 144px;
   }
-  .content-about {
+  .content-o-d {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
-  .content-about p {
+  .description-o-d {
     margin-left: auto;
     margin-right: auto;
     max-width: 428px;
@@ -864,65 +851,65 @@ body {
     font-size: 14px;
     font-weight: 300;
   }
-  #main-img-about {
+  .menu-o-d {
+    width: auto;
+  }
+  .call-o-d {
+    width: auto;
+    height: auto;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  #map-o-d {
     margin: 0 auto;
+    width: auto;
     max-width: 50%;
-    padding-right: 40px;
+    padding-left: 40px;
     display: block;
     height: auto;
     flex: 0 1 50%;
   }
-  .title {
-    max-width: 360px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    margin-top: 90px;
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 120%;
-  }
-
-  .block-facts,
-  .big-block {
-    padding: 25px 15px;
-    margin: 0 auto;
+  .zayavka {
+    padding: 60px 0;
     height: auto;
+  }
+  .zayavka .container {
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
+    max-width: 370px;
   }
-  .block-facts {
-    max-width: 31%;
-  }
-  .block-facts-nav {
-    margin-left: 0;
-    margin-bottom: 30px;
-    justify-content: space-around;
-  }
-  .block-title {
+  .reserve-title {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    position: static;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .description {
+    margin: 0;
+    padding: 0;
     width: auto;
     position: static;
+    font-size: 16px;
   }
-  .block-description {
-    margin: 0;
-    min-height: 42px;
-    position: static;
-    text-align: center;
+  .reserve-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  #block-description-1,
-  #block-description-2,
-  #block-description-3 {
-    margin: 0;
+  .reserve-form input,
+  .reserve-form textarea {
+    margin-right: 0;
   }
-  .myProducts .container {
-    margin: 0 -20px;
+  .reserve-form input {
+    margin-bottom: 35px;
   }
-  .galleria {
-    max-width: 100%;
-    position: static;
+  .reserve-form textarea {
+    margin-bottom: 116px;
   }
 }
 
@@ -977,34 +964,16 @@ body {
   .background-container {
     padding-top: 276px;
   }
-  /*  */
-  .title {
-    margin-bottom: 50px;
-  }
   .menu-nav,
-  #main-img-about {
+  #map-o-d,
+  .call-o-d {
     display: none;
   }
-  .content-about p {
-    width: auto;
-    font-size: 14px;
-    font-weight: 300;
-    text-align: center;
+  .content-o-d {
+    margin-top: 144px;
   }
-  .block-facts-nav {
+  .menu-o-d {
     margin-bottom: 0;
-    flex-direction: column;
-    align-items: center;
-  }
-  .block-facts,
-  .big-block {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    padding: 25px 30px;
-    max-width: 325px;
-  }
-  .big-block-title {
-    margin: 0;
   }
 }
 
@@ -1020,7 +989,7 @@ body {
     max-width: 288px;
     font-size: 12px;
   }
-  .title {
-    font-size: 18px;
+  .six-block {
+    padding: 30px 0;
   }
 }

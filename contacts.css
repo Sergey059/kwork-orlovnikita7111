@@ -26,10 +26,6 @@ header a {
   color: #006986;
 }
 
-.menu {
-  display: flex;
-}
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -133,6 +129,7 @@ header a {
   max-width: 389px;
   font-size: 18px;
   line-height: 140%;
+
   color: #006986;
 }
 
@@ -146,7 +143,6 @@ header a {
   color: #fff;
   box-sizing: border-box;
   transition: all 500ms ease;
-  font-family: "Museo Sans Cyrl 500", sans-serif;
   font-size: 18px;
 }
 
@@ -166,12 +162,11 @@ header a {
   transform: translateZ(-10px);
 }
 
-/*menu-nav*/
 .menu-nav {
   font-size: 14px;
+  color: #006986;
   margin-top: 72px;
   margin-bottom: 40px;
-  color: #006986;
 }
 
 .menu-nav span {
@@ -181,124 +176,97 @@ header a {
 .menu-nav a {
   text-decoration: none;
 }
-
-/*menu-nav*/
-
 /*HEADER*/
-
-.title {
-  margin-top: 96px;
-  margin-bottom: 40px;
-  text-align: center;
-  font-family: "Museo Sans Cyrl 500", sans-serif;
-  font-size: 32px;
-  line-height: 120%;
-  color: #00465e;
+#container-contacts {
+  height: 384px;
 }
-
-#main-title {
-  margin-top: 50px;
-}
-
-.content-about p {
-  margin-left: 25px;
-  width: 587px;
-  height: 291px;
-  font-family: "Museo Sans Cyrl 300", sans-serif;
-  font-size: 18px;
-  line-height: 180%;
-  color: #006986;
-}
-
-.content-about {
+.info-block {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #1d7f9d;
 }
 
-.block-facts-nav {
-  display: flex;
-  margin-left: 51px;
-}
-
-.block-facts {
-  position: relative;
-  margin-right: 62px;
-  border: 1px solid #1d7f9d;
-  border-radius: 10px;
-  width: 325px;
-  height: 163px;
-  text-align: center;
-}
-
-.block-title {
+.contacts-block-title {
   position: absolute;
-  margin-top: 35px;
-  margin-left: 39px;
-  width: 248px;
-  font-family: "Museo Sans Cyrl 500", sans-serif;
-  font-size: 45px;
-  color: #00465e;
-  margin-bottom: 0;
-}
-
-.block-description {
-  position: absolute;
-  margin-top: 104px;
-
-  font-family: "Museo Sans Cyrl 300", sans-serif;
-  font-size: 15px;
-  color: #00465e;
-  line-height: 140%;
-}
-
-.big-block {
-  border: 1px solid #1d7f9d;
-  border-radius: 10px;
-  width: 510px;
-  height: 163px;
-  text-align: center;
-  margin: 60px auto;
-}
-
-.big-block-title {
   margin-top: 25px;
   font-family: "Museo Sans Cyrl 500", sans-serif;
-  font-size: 45px;
-  color: #00465e;
+  font-size: 18px;
+  color: #ffffff;
 }
 
-.big-block-description {
-  margin-top: 15px;
+.contacts-block-description {
+  position: absolute;
   font-family: "Museo Sans Cyrl 300", sans-serif;
   font-size: 15px;
-  color: #00465e;
+  color: #ffffff;
   line-height: 140%;
+  margin-top: 62px;
 }
 
-.myProducts {
-  text-align: center;
+#number-block {
+  width: 180px;
+  height: 194px;
 }
 
-.galleria {
+#messenger-block {
+  margin-left: 204px;
+  width: 180px;
+  height: 130px;
+  border-radius: 20px;
+}
+
+.messenger-icon-block {
   position: absolute;
-  width: 1200px;
-  height: 700px;
-
-  border-radius: 10px;
 }
 
-.galleria img {
-  object-fit: cover;
+.messenger-icon-block a img {
+  text-align: center;
+  margin-top: 62px;
+  margin-right: 10px;
 }
 
-#block-description-1 {
-  margin-left: 19px;
+#viber {
+  margin-right: 0;
 }
 
-#block-description-2 {
-  margin-left: 51px;
+#rekviziti-block {
+  margin-top: 204px;
+  width: 180px;
+  height: 150px;
+  border-radius: 20px;
+}
+#rekviziti-block .contacts-block-description {
+  margin-top: 62px;
+}
+#email-block {
+  margin-left: 204px;
+  margin-top: 204px;
+  width: 180px;
+  height: 180px;
+  border-radius: 20px;
 }
 
+#main-email {
+  position: absolute;
+  margin-top: 55px;
+}
+
+#o-prod {
+  position: absolute;
+  margin-top: 87px;
+  font-size: 16px;
+}
+
+#prod-email {
+  margin-top: 111px;
+}
+
+.map-wrapper {
+  margin-left: 408px;
+  border-radius: 20px;
+  overflow: hidden;
+}
 /*FOOTER*/
 .footer {
   margin-top: 96px;
@@ -306,11 +274,11 @@ header a {
 
 .map-info-block {
   position: relative;
+  margin-left: 30px;
   width: 340px;
   height: 226px;
   background-color: #ffffff;
-  margin-top: 99px;
-  margin-left: 246px;
+  margin-top: 79px;
 }
 
 .info-map-icon {
@@ -342,7 +310,6 @@ header a {
 #infodesc1 {
   margin-top: 52px;
 }
-
 #infodesc2 {
   margin-top: 98px;
 }
@@ -365,7 +332,7 @@ header a {
 }
 
 .background-container {
-  height: 263px;
+  height: 245px;
   background-color: #49899e;
   background-size: auto;
 }
@@ -395,24 +362,6 @@ header a {
   font-size: 30px;
 }
 
-#contacts {
-  position: absolute;
-  margin-top: 39px;
-  margin-left: 222px;
-}
-
-#phone-icon {
-  position: absolute;
-  margin-left: 227px;
-  margin-top: 91px;
-}
-
-#email-icon {
-  position: absolute;
-  margin-left: 227px;
-  margin-top: 187px;
-}
-
 .footer-description {
   position: absolute;
   font-family: "Museo Sans Cyrl 300", sans-serif;
@@ -421,58 +370,11 @@ header a {
   line-height: 140%;
 }
 
-#contacts-description {
-  position: absolute;
-  margin-top: 95px;
-  margin-left: 264px;
-}
-
-.messenger-icon-block {
-  position: absolute;
-  margin-left: 263px;
-  margin-top: 67px;
-}
-
-.messenger-icon-block a img {
-  text-align: center;
-  margin-top: 62px;
-  margin-right: 10px;
-}
-
-.e-mail-desc {
-  position: absolute;
-  margin-top: 189px;
-  margin-left: 264px;
-  font-size: 17px;
-  font-family: "Museo Sans Cyrl 500", sans-serif;
-  color: #ffffff;
-}
-
-#email-adress {
-  text-decoration: none;
-  margin-top: 214px;
-  margin-left: 264px;
-}
-
-#rekviziti {
-  position: absolute;
-  margin-top: 39px;
-  margin-left: 630px;
-}
-
-#rekviziti-desc {
-  width: 158px;
-  height: 62px;
-  margin-top: 85px;
-  margin-left: 630px;
-}
-
 #menu-on-site {
   position: absolute;
   margin-top: 39px;
   margin-left: 1018px;
 }
-
 .nav-menu {
   position: absolute;
   margin-top: 85px;
@@ -486,12 +388,11 @@ header a {
   color: #ffffff;
   line-height: 140%;
 }
-
 .nav-menu li a:hover {
   border-bottom: 1px solid #ffffff;
 }
-
 /*FOOTER*/
+
 .popup {
   position: fixed;
   width: 100%;
@@ -582,7 +483,6 @@ header a {
   top: 8px;
   right: 8px;
 }
-
 /**************************************************   ADAPTIVE   *****************************************************/
 body {
   min-width: 320px;
@@ -762,21 +662,12 @@ body {
     max-width: 245px;
     font-size: 18px;
   }
-  .car {
-    position: static;
-    max-width: 95%;
-    height: auto;
-  }
   #button-callback {
     transition: none;
     -webkit-transition: none;
     -moz-transition: none;
     -ms-transition: none;
     -o-transition: none;
-  }
-  #phone-icon,
-  #email-icon {
-    display: none;
   }
   .background-container {
     padding: 20px 0 30px;
@@ -808,27 +699,19 @@ body {
     justify-content: space-between;
     align-items: flex-start;
   }
-  .footer__contacts {
-    display: flex;
-    flex-direction: column;
-  }
   .messenger-icon-block {
     position: absolute;
-    top: 0;
+    top: 62px;
     margin-bottom: 10px;
-    order: -1;
   }
   .footer__logo {
     margin-bottom: 20px;
   }
-  #contacts.footer-title,
-  #rekviziti.footer-title,
   #menu-on-site.footer-title,
   .footer-title {
     margin-bottom: 7px;
     font-size: 18px;
   }
-  #contacts-description,
   .nav-menu li a {
     margin-bottom: 14px;
     font-weight: 300;
@@ -841,92 +724,74 @@ body {
     font-size: 10px;
     font-weight: 300;
   }
-  #rekviziti-desc {
-    height: auto;
-    line-height: 1.62;
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
   /*  */
   .menu-nav {
     margin-top: 144px;
   }
-  .content-about {
+  #container-contacts {
+    height: auto;
+  }
+  #container-contacts {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .content-about p {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 428px;
-    width: auto;
-    height: auto;
-    flex: 1 0 50%;
-    font-size: 14px;
-    font-weight: 300;
+  .contacts__cards {
+    width: 361px;
+    height: 392px;
+    position: relative;
+    flex: 1 0 361px;
   }
-  #main-img-about {
-    margin: 0 auto;
-    max-width: 50%;
-    padding-right: 40px;
-    display: block;
-    height: auto;
-    flex: 0 1 50%;
+  #number-block,
+  #messenger-block,
+  #rekviziti-block,
+  #email-block {
+    width: 173px;
   }
-  .title {
-    max-width: 360px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    margin-top: 90px;
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 120%;
+  .contacts-block-title {
+    font-family: "Museo Sans Cyrl 400", sans-serif;
   }
-
-  .block-facts,
-  .big-block {
-    padding: 25px 15px;
-    margin: 0 auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  #rekviziti-block {
+    margin-top: 0;
+    margin-left: 189px;
+    height: 143px;
   }
-  .block-facts {
-    max-width: 31%;
-  }
-  .block-facts-nav {
+  #messenger-block {
+    height: 111px;
     margin-left: 0;
-    margin-bottom: 30px;
-    justify-content: space-around;
+    margin-top: 224px;
   }
-  .block-title {
+  #email-block {
+    height: 172px;
+    margin-left: 189px;
+    margin-top: 219px;
+  }
+  .background-container {
+    padding-top: 276px;
+  }
+  .map-info-block {
     margin: 0;
-    margin-bottom: 15px;
-    width: auto;
-    position: static;
+    left: 26px;
+    bottom: -350px;
   }
-  .block-description {
-    margin: 0;
-    min-height: 42px;
-    position: static;
-    text-align: center;
-  }
-  #block-description-1,
-  #block-description-2,
-  #block-description-3 {
+  .map-wrapper {
     margin: 0;
   }
-  .myProducts .container {
-    margin: 0 -20px;
-  }
-  .galleria {
-    max-width: 100%;
-    position: static;
+  .map-block {
+    margin-left: 40px;
+    flex: 100%;
   }
 }
 
 @media (max-width: 768px) {
+  .footer {
+    margin-top: 0;
+  }
   .popup {
     background-color: #fff;
   }
@@ -961,50 +826,33 @@ body {
   #button-callback {
     width: 100%;
   }
-  .footer__rekviziti {
+  .menu-nav {
     display: none;
   }
-  .footer-map {
-    padding: 0 26px;
-    position: relative;
-    z-index: 100;
+  .contacts-content {
+    margin-top: 165px;
+  }
+  #container-contacts {
+    flex-direction: column;
+  }
+  .contacts__cards {
+    margin-bottom: 75px;
+    align-self: center;
   }
   .map-info-block {
+    bottom: -250px;
+  }
+  .map-block {
+    margin-left: 0;
+    align-self: stretch;
+  }
+  .map-wrapper {
     margin: 0;
-    left: 26px;
-    top: 454px;
-  }
-  .background-container {
-    padding-top: 276px;
-  }
-  /*  */
-  .title {
-    margin-bottom: 50px;
-  }
-  .menu-nav,
-  #main-img-about {
-    display: none;
-  }
-  .content-about p {
-    width: auto;
-    font-size: 14px;
-    font-weight: 300;
-    text-align: center;
-  }
-  .block-facts-nav {
-    margin-bottom: 0;
-    flex-direction: column;
-    align-items: center;
-  }
-  .block-facts,
-  .big-block {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    padding: 25px 30px;
-    max-width: 325px;
-  }
-  .big-block-title {
-    margin: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
   }
 }
 
@@ -1019,8 +867,5 @@ body {
   .header-content span {
     max-width: 288px;
     font-size: 12px;
-  }
-  .title {
-    font-size: 18px;
   }
 }

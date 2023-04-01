@@ -26,10 +26,6 @@ header a {
   color: #006986;
 }
 
-.menu {
-  display: flex;
-}
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -128,14 +124,6 @@ header a {
   color: #00465e;
 }
 
-.header-content {
-  padding-top: 30px;
-  max-width: 389px;
-  font-size: 18px;
-  line-height: 140%;
-  color: #006986;
-}
-
 .button {
   display: flex;
   border-width: 0;
@@ -166,12 +154,11 @@ header a {
   transform: translateZ(-10px);
 }
 
-/*menu-nav*/
 .menu-nav {
   font-size: 14px;
+  color: #006986;
   margin-top: 72px;
   margin-bottom: 40px;
-  color: #006986;
 }
 
 .menu-nav span {
@@ -182,121 +169,79 @@ header a {
   text-decoration: none;
 }
 
-/*menu-nav*/
-
 /*HEADER*/
 
-.title {
-  margin-top: 96px;
-  margin-bottom: 40px;
-  text-align: center;
+.rewiew-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  padding: 0;
+}
+
+.otziv {
+  margin-bottom: 30px;
+  position: relative;
+  border: 1px solid #1d7f9d;
+  border-radius: 10px;
+  width: 384px;
+  height: 208px;
+}
+
+.client-name {
+  position: absolute;
+  margin-top: 43px;
+  margin-left: 121px;
   font-family: "Museo Sans Cyrl 500", sans-serif;
-  font-size: 32px;
-  line-height: 120%;
-  color: #00465e;
-}
-
-#main-title {
-  margin-top: 50px;
-}
-
-.content-about p {
-  margin-left: 25px;
-  width: 587px;
-  height: 291px;
-  font-family: "Museo Sans Cyrl 300", sans-serif;
   font-size: 18px;
-  line-height: 180%;
   color: #006986;
 }
 
-.content-about {
-  display: flex;
-  align-items: center;
-}
-
-.block-facts-nav {
-  display: flex;
-  margin-left: 51px;
-}
-
-.block-facts {
-  position: relative;
-  margin-right: 62px;
-  border: 1px solid #1d7f9d;
-  border-radius: 10px;
-  width: 325px;
-  height: 163px;
-  text-align: center;
-}
-
-.block-title {
+.otziv img {
   position: absolute;
-  margin-top: 35px;
-  margin-left: 39px;
-  width: 248px;
-  font-family: "Museo Sans Cyrl 500", sans-serif;
-  font-size: 45px;
-  color: #00465e;
-  margin-bottom: 0;
+  margin-top: 43px;
+  margin-left: 20px;
+  float: left;
 }
 
-.block-description {
+textarea {
+  resize: none;
   position: absolute;
-  margin-top: 104px;
-
   font-family: "Museo Sans Cyrl 300", sans-serif;
-  font-size: 15px;
-  color: #00465e;
+  font-size: 16px;
   line-height: 140%;
+  margin-left: 121px;
+  margin-top: 79px;
+  width: 242px;
+  color: #006986;
+  border: none;
 }
 
-.big-block {
-  border: 1px solid #1d7f9d;
+textarea:focus {
+  outline: none;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+textarea:hover::-webkit-scrollbar {
+  display: block;
+  height: 10px;
+  cursor: pointer;
   border-radius: 10px;
-  width: 510px;
-  height: 163px;
-  text-align: center;
-  margin: 60px auto;
+  width: 2px;
+  background-color: #037494;
 }
 
-.big-block-title {
-  margin-top: 25px;
-  font-family: "Museo Sans Cyrl 500", sans-serif;
-  font-size: 45px;
-  color: #00465e;
-}
-
-.big-block-description {
-  margin-top: 15px;
-  font-family: "Museo Sans Cyrl 300", sans-serif;
-  font-size: 15px;
-  color: #00465e;
-  line-height: 140%;
-}
-
-.myProducts {
-  text-align: center;
-}
-
-.galleria {
-  position: absolute;
-  width: 1200px;
-  height: 700px;
-
+textarea::-webkit-scrollbar-thumb {
   border-radius: 10px;
+  background-color: #a6cada;
 }
 
-.galleria img {
-  object-fit: cover;
-}
-
-#block-description-1 {
-  margin-left: 19px;
-}
-
-#block-description-2 {
-  margin-left: 51px;
+textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #f9f9fd;
 }
 
 /*FOOTER*/
@@ -486,7 +431,6 @@ header a {
   color: #ffffff;
   line-height: 140%;
 }
-
 .nav-menu li a:hover {
   border-bottom: 1px solid #ffffff;
 }
@@ -582,7 +526,6 @@ header a {
   top: 8px;
   right: 8px;
 }
-
 /**************************************************   ADAPTIVE   *****************************************************/
 body {
   min-width: 320px;
@@ -762,11 +705,6 @@ body {
     max-width: 245px;
     font-size: 18px;
   }
-  .car {
-    position: static;
-    max-width: 95%;
-    height: auto;
-  }
   #button-callback {
     transition: none;
     -webkit-transition: none;
@@ -849,80 +787,50 @@ body {
   .menu-nav {
     margin-top: 144px;
   }
-  .content-about {
+  .rewiew-wrapper {
+    margin: 0 auto;
+    max-width: 752px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0;
   }
-  .content-about p {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 428px;
+  .otziv {
+    position: relative;
+    width: 100%;
+    max-width: 361px;
+    height: auto;
+    padding: 40px 20px 40px 131px;
+    padding-left: 131px;
+  }
+  .client-name,
+  .otziv-text,
+  .otziv-text textarea,
+  .otziv img {
+    margin: 0;
+    padding: 0;
     width: auto;
     height: auto;
-    flex: 1 0 50%;
+    position: static;
+  }
+  .otziv img {
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  .client-name {
+    margin-bottom: 6px;
+  }
+  .otziv-text textarea {
     font-size: 14px;
-    font-weight: 300;
-  }
-  #main-img-about {
-    margin: 0 auto;
-    max-width: 50%;
-    padding-right: 40px;
-    display: block;
-    height: auto;
-    flex: 0 1 50%;
-  }
-  .title {
-    max-width: 360px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    margin-top: 90px;
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 120%;
-  }
-
-  .block-facts,
-  .big-block {
-    padding: 25px 15px;
-    margin: 0 auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-  .block-facts {
-    max-width: 31%;
-  }
-  .block-facts-nav {
-    margin-left: 0;
-    margin-bottom: 30px;
-    justify-content: space-around;
-  }
-  .block-title {
-    margin: 0;
-    margin-bottom: 15px;
-    width: auto;
-    position: static;
-  }
-  .block-description {
-    margin: 0;
-    min-height: 42px;
-    position: static;
-    text-align: center;
-  }
-  #block-description-1,
-  #block-description-2,
-  #block-description-3 {
-    margin: 0;
-  }
-  .myProducts .container {
-    margin: 0 -20px;
-  }
-  .galleria {
-    max-width: 100%;
-    position: static;
   }
 }
 
@@ -978,33 +886,13 @@ body {
     padding-top: 276px;
   }
   /*  */
-  .title {
-    margin-bottom: 50px;
-  }
-  .menu-nav,
-  #main-img-about {
+
+  .menu-nav {
     display: none;
   }
-  .content-about p {
-    width: auto;
-    font-size: 14px;
-    font-weight: 300;
-    text-align: center;
-  }
-  .block-facts-nav {
-    margin-bottom: 0;
-    flex-direction: column;
-    align-items: center;
-  }
-  .block-facts,
-  .big-block {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    padding: 25px 30px;
-    max-width: 325px;
-  }
-  .big-block-title {
-    margin: 0;
+  .rewiew-wrapper {
+    margin-top: 144px;
+    justify-content: center;
   }
 }
 
@@ -1019,8 +907,5 @@ body {
   .header-content span {
     max-width: 288px;
     font-size: 12px;
-  }
-  .title {
-    font-size: 18px;
   }
 }

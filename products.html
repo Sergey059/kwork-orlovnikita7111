@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <title>Каталог|Polihim</title>
+    <link rel="stylesheet" href="products.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container">
+        <div class="nav">
+          <img src="images/Белый%20с%20текстом%201.png" class="logo" alt="" />
+          <div class="menu-wrap">
+            <ul class="topmenu" style="list-style: none">
+              <li><a href="">Каталог</a></li>
+              <li><a href="">Оплата и доставка</a></li>
+              <li><a href="">Контакты</a></li>
+              <li>
+                <a href="" style="margin-right: 0; transition: 0.4s ease-in-out"
+                  >О компании</a
+                >
+                <ul class="submenu" id="about-us-menu" style="list-style: none">
+                  <li><a href="">О нас</a></li>
+                  <li><a href="">Сертификат</a></li>
+                  <li><a href="">Отзывы</a></li>
+                  <li><a href="">Часто задаваемые вопросы</a></li>
+                </ul>
+              </li>
+            </ul>
+            <span id="tel">8 (800) 600-25-02</span>
+
+            <button id="top-button" class="button">Обратный вызов</button>
+          </div>
+          <button class="burger">
+            <svg
+              class="menu-open"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M28 10.3333H4C3.45333 10.3333 3 9.87992 3 9.33325C3 8.78659 3.45333 8.33325 4 8.33325H28C28.5467 8.33325 29 8.78659 29 9.33325C29 9.87992 28.5467 10.3333 28 10.3333Z"
+                fill="#fff"
+              />
+              <path
+                d="M28 17H4C3.45333 17 3 16.5467 3 16C3 15.4533 3.45333 15 4 15H28C28.5467 15 29 15.4533 29 16C29 16.5467 28.5467 17 28 17Z"
+                fill="#fff"
+              />
+              <path
+                d="M28 23.6665H4C3.45333 23.6665 3 23.2132 3 22.6665C3 22.1198 3.45333 21.6665 4 21.6665H28C28.5467 21.6665 29 22.1198 29 22.6665C29 23.2132 28.5467 23.6665 28 23.6665Z"
+                fill="#fff"
+              />
+            </svg>
+            <svg
+              class="menu-close"
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.61181 25C1.94794 25 1.28407 24.7555 0.759958 24.2316C-0.253319 23.2187 -0.253319 21.5421 0.759958 20.5292L20.5363 0.759693C21.5496 -0.253231 23.2268 -0.253231 24.24 0.759693C25.2533 1.77262 25.2533 3.44918 24.24 4.4621L4.46366 24.2316C3.97449 24.7555 3.27568 25 2.61181 25Z"
+                fill="#fff"
+              />
+              <path
+                d="M22.3882 25C21.7243 25 21.0604 24.7555 20.5363 24.2316L0.759958 4.4621C-0.253319 3.44918 -0.253319 1.77262 0.759958 0.759693C1.77324 -0.253231 3.45038 -0.253231 4.46366 0.759693L24.24 20.5292C25.2533 21.5421 25.2533 23.2187 24.24 24.2316C23.7159 24.7555 23.0521 25 22.3882 25Z"
+                fill="#fff"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="products-content">
+        <div class="menu-nav">
+          <a href="#" style="text-decoration: none"> <span>Главная</span></a>
+          ❯
+          <span>Каталог</span>
+        </div>
+
+        <div class="list active">
+          <button class="side-button filter" data-id="all">
+            <span class="button-arrow" style="padding: 0">❯</span>
+            <span>Выбрать продукцию</span>
+          </button>
+
+          <button class="side-button" data-id="all">
+            <span class="button-arrow" style="padding: 0">❯</span>
+            <span>Все товары</span>
+          </button>
+
+          <button class="side-button" data-id="glikoli">
+            <span class="button-arrow" style="padding: 0">❯</span>
+            <span>Гликоли</span>
+          </button>
+
+          <button class="side-button" data-id="spirti">
+            <span class="button-arrow" style="padding: 0">❯</span>
+            <span>Спирты</span>
+          </button>
+
+          <button class="side-button" data-id="rastvoriteli">
+            <span class="button-arrow" style="padding: 0">❯</span>
+            <span>Растворители</span>
+          </button>
+
+          <button
+            id="b-button"
+            class="side-button"
+            data-id="vod-rast-tepl-antifriz"
+          >
+            <span id="b-button-arrow" class="button-arrow">❯</span>
+            <span id="b-button-span"
+              >Водные растворы, теплоносители, <br class="dn" />
+              антифризы</span
+            >
+          </button>
+
+          <button class="side-button" data-id="glitserin">
+            <span class="button-arrow" style="padding: 0">❯</span>
+            <span>Глицерин</span>
+          </button>
+
+          <button class="side-button" data-id="tara">
+            <span class="button-arrow" style="padding: 0">❯</span>
+            <span>Тара</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="content-cards">
+        <div class="content-card vod-rast-tepl-antifriz">
+          <div class="card-frame">
+            <img src="images/polihim%203.png" alt="" />
+            <div class="card-title">
+              Водный раствор этиленгликоля <br />
+              10%- 90%
+            </div>
+            <div class="card-price">от 36 ₽</div>
+            <a href="#popup">
+              <div class="card-bottom-button">
+                <div class="card-button-arrow"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="content-card vod-rast-tepl-antifriz">
+          <div class="card-frame" style="position: relative">
+            <img
+              src="images/polihim%203.png"
+              alt=""
+              style="position: absolute"
+            />
+            <div class="card-title">Тосол</div>
+            <div class="card-price">от 48 ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card vod-rast-tepl-antifriz">
+          <div class="card-frame" style="position: relative">
+            <img
+              src="images/polihim%203.png"
+              alt=""
+              style="position: absolute"
+            />
+            <div class="card-title">
+              Водный раствор пропиленгликоля 10%- 90%
+            </div>
+            <div class="card-price">от 54 ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card vod-rast-tepl-antifriz">
+          <div class="card-frame" style="position: relative">
+            <img
+              src="images/polihim%203.png"
+              alt=""
+              style="position: absolute"
+            />
+            <div class="card-title">Антифриз G11 polihim</div>
+            <div class="card-price">от 75 ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card vod-rast-tepl-antifriz">
+          <div class="card-frame" style="position: relative">
+            <img
+              src="images/polihim%203.png"
+              alt=""
+              style="position: absolute"
+            />
+            <div class="card-title">Антифриз G12 polihim</div>
+            <div class="card-price">от 76 ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card vod-rast-tepl-antifriz">
+          <div class="card-frame">
+            <img src="images/polihim%203.png" alt="" />
+            <div class="card-title">Водно-глицериновый раствор 10%-90%</div>
+            <div class="card-price">от 100 ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card glikoli">
+          <div class="card-frame" style="position: relative">
+            <img
+              src="images/polihim%203.png"
+              alt=""
+              style="position: absolute"
+            />
+            <div class="card-title">Этиленгликоль</div>
+            <div class="card-price">от 72 ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card glikoli">
+          <div class="card-frame" style="position: relative">
+            <img
+              src="images/polihim%203.png"
+              alt=""
+              style="position: absolute"
+            />
+            <div class="card-title">Диэтиленгликоль</div>
+            <div class="card-price">от 94 ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card glikoli">
+          <div class="card-frame" style="position: relative">
+            <img
+              src="images/polihim%203.png"
+              alt=""
+              style="position: absolute"
+            />
+            <div class="card-title">Пропиленгликоль технический</div>
+            <div class="card-price">от 155 ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card glikoli">
+          <div class="card-frame" style="position: relative">
+            <img
+              src="images/polihim%203.png"
+              alt=""
+              style="position: absolute"
+            />
+            <div class="card-title">Пропиленгликоль пищевой USP</div>
+            <div class="card-price">от 160 ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card rastvoriteli">
+          <div class="card-frame">
+            <img src="images/polihim%203.png" alt="" />
+            <div class="card-title">Ацетон</div>
+            <div class="card-price">от 85 ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card rastvoriteli">
+          <div class="card-frame" style="position: relative">
+            <img
+              src="images/polihim%203.png"
+              alt=""
+              style="position: absolute"
+            />
+            <div class="card-title">Керосин</div>
+            <div class="card-price">от 89 ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card rastvoriteli">
+          <div class="card-frame" style="position: relative">
+            <img
+              src="images/polihim%203.png"
+              alt=""
+              style="position: absolute"
+            />
+            <div class="card-title">Уайт-спирит</div>
+            <div class="card-price">от 91 ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card rastvoriteli">
+          <div class="card-frame" style="position: relative">
+            <img
+              src="images/polihim%203.png"
+              alt=""
+              style="position: absolute"
+            />
+            <div class="card-title">
+              Номерные растворители 646, 647, 648, 649, 650
+            </div>
+            <div class="card-price">от 96 ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card rastvoriteli">
+          <div class="card-frame" style="position: relative">
+            <img
+              src="images/polihim%203.png"
+              alt=""
+              style="position: absolute"
+            />
+            <div class="card-title">Нефрас 80/120</div>
+            <div class="card-price">от 119 ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card spirti">
+          <div class="card-frame">
+            <img src="images/polihim%203.png" alt="" />
+            <div class="card-title">Глицерин сырой натуральный</div>
+            <div class="card-price">от 62 ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card spirti">
+          <div class="card-frame" style="position: relative">
+            <img
+              src="images/polihim%203.png"
+              alt=""
+              style="position: absolute"
+            />
+            <div class="card-title">Изопропиловый спирт абсолютированный</div>
+            <div class="card-price">от 75 ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card spirti">
+          <div class="card-frame" style="position: relative">
+            <img
+              src="images/polihim%203.png"
+              alt=""
+              style="position: absolute"
+            />
+            <div class="card-title">Глицерин USP</div>
+            <div class="card-price">от 94 ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card spirti">
+          <div class="card-frame" style="position: relative">
+            <img
+              src="images/polihim%203.png"
+              alt=""
+              style="position: absolute"
+            />
+            <div class="card-title">Глицерин технический</div>
+            <div class="card-price">от 98 ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card tara">
+          <div class="card-frame" style="position: relative">
+            <img
+              src="images/polihim%203.png"
+              alt=""
+              style="position: absolute"
+            />
+            <div class="card-title">Канистра 20 кг</div>
+            <div class="card-price">от x ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card tara">
+          <div class="card-frame" style="position: relative">
+            <img
+              src="images/polihim%203.png"
+              alt=""
+              style="position: absolute"
+            />
+            <div class="card-title">Бочка 200 кг</div>
+            <div class="card-price">от х ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card tara">
+          <div class="card-frame" style="position: relative">
+            <img
+              src="images/polihim%203.png"
+              alt=""
+              style="position: absolute"
+            />
+            <div class="card-title">Еврокуб 1000 кг</div>
+            <div class="card-price">от х ₽</div>
+
+            <div class="card-bottom-button">
+              <div class="card-button-arrow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer" class="footer">
+      <div class="footer-map">
+        <div class="map-info-block" style="position: absolute">
+          <div class="info-map-icon">
+            <img src="images/map.png" alt="" />
+          </div>
+          <div class="info-map-title">Адрес</div>
+          <div id="infodesc1" class="info-map-description">
+            Нижегородская обл., г. Дзержинск, ул. Циолковского, д. 15/2, оф. 373
+          </div>
+          <div id="infodesc2" class="info-map-description">
+            пгт. Ильиногорск, ул. Железнодорожная, д. 7
+          </div>
+          <div id="info-map-title2" class="info-map-title">Время работы</div>
+          <div id="info-map-icon2" class="info-map-icon">
+            <img src="images/clock.png" alt="" />
+          </div>
+          <div id="infodesc3" class="info-map-description">
+            Пн-Пт с 9:00 до 18:00
+          </div>
+        </div>
+      </div>
+      <script
+        type="text/javascript"
+        charset="utf-8"
+        async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4daa5c64c951ed500c04151986066492159dfeae53fbdf1466a99c28f7772c20&amp;width=100%25&amp;height=424&amp;lang=ru_RU&amp;scroll=true"
+      ></script>
+
+      <div class="background-container">
+        <div class="container">
+          <div class="footer__logo">
+            <div class="footer-logo">
+              <img src="images/Белый с текстом 4.png" alt="" />
+            </div>
+
+            <span class="footer-logo-span"
+              >©️ 2023 Polyhim <br />
+              Все права защищены.</span
+            >
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__contacts">
+              <div id="contacts" class="footer-title">Контакты</div>
+              <img id="phone-icon" src="images/call.png" alt="" />
+
+              <div id="contacts-description" class="footer-description">
+                8 (800) 600-25-02
+              </div>
+
+              <div class="messenger-icon-block">
+                <a href="#" style="text-decoration: none">
+                  <img src="images/telegram.png" alt="" />
+                </a>
+                <a href="#" style="text-decoration: none">
+                  <img src="images/whatsapp.png" alt="" />
+                </a>
+                <a href="#" style="text-decoration: none">
+                  <img id="viber" src="images/viber.png" alt="" />
+                </a>
+              </div>
+
+              <img id="email-icon" src="images/emai.png" alt="" />
+
+              <div class="e-mail-desc footer-title">E-mail</div>
+              <div id="email-adress" class="footer-description">
+                polyhim-nn@mail.ru
+              </div>
+            </div>
+            <div class="footer__rekviziti">
+              <div id="rekviziti" class="footer-title">Реквизиты</div>
+              <div id="rekviziti-desc" class="footer-description">
+                ИНН: 5249172913<br />
+                КПП: 524901001<br />
+                ОГРН: 1205200041232
+              </div>
+            </div>
+            <div class="footer__menu">
+              <div id="menu-on-site" class="footer-title">Меню сайта</div>
+              <ul class="nav-menu" style="list-style: none">
+                <li><a href="#"> Каталог</a></li>
+                <li><a href="#">Оплата и доставка</a></li>
+                <li><a href="#"> О компании</a></li>
+                <li><a href="#"> Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="popup" class="popup">
+      <div class="popup-body">
+        <div class="popup-content">
+          <a href="#" class="popup-close"
+            ><img src="images/close-circle.png" alt=""
+          /></a>
+          <h2 style="margin: 0">Обратный вызов</h2>
+          <p style="margin: 0">
+            Наши менеджеры свяжутся с вами для обсуждения деталей
+          </p>
+          <form action="#" class="callback">
+            <input
+              type="number"
+              id="phone"
+              class="number-field"
+              name="telephone-number"
+              placeholder="Номер телефона"
+              required
+            />
+            <input type="submit" id="button-callback" value="Отправить" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="JS/main.js"></script>
+    <script src="/JS/jquery-3.6.4.min.js"></script>
+  </body>
+</html>

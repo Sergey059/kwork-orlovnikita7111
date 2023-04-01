@@ -26,10 +26,6 @@ header a {
   color: #006986;
 }
 
-.menu {
-  display: flex;
-}
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -128,14 +124,6 @@ header a {
   color: #00465e;
 }
 
-.header-content {
-  padding-top: 30px;
-  max-width: 389px;
-  font-size: 18px;
-  line-height: 140%;
-  color: #006986;
-}
-
 .button {
   display: flex;
   border-width: 0;
@@ -146,12 +134,8 @@ header a {
   color: #fff;
   box-sizing: border-box;
   transition: all 500ms ease;
-  font-family: "Museo Sans Cyrl 500", sans-serif;
   font-size: 18px;
-}
-
-.button:hover {
-  transform: scale(1.05);
+  font-family: "Museo Sans Cyrl 500", sans-serif;
 }
 
 #top-button {
@@ -166,12 +150,11 @@ header a {
   transform: translateZ(-10px);
 }
 
-/*menu-nav*/
 .menu-nav {
   font-size: 14px;
+  color: #006986;
   margin-top: 72px;
   margin-bottom: 40px;
-  color: #006986;
 }
 
 .menu-nav span {
@@ -181,122 +164,20 @@ header a {
 .menu-nav a {
   text-decoration: none;
 }
-
-/*menu-nav*/
-
 /*HEADER*/
 
-.title {
-  margin-top: 96px;
-  margin-bottom: 40px;
-  text-align: center;
-  font-family: "Museo Sans Cyrl 500", sans-serif;
-  font-size: 32px;
-  line-height: 120%;
-  color: #00465e;
-}
-
-#main-title {
-  margin-top: 50px;
-}
-
-.content-about p {
-  margin-left: 25px;
-  width: 587px;
-  height: 291px;
-  font-family: "Museo Sans Cyrl 300", sans-serif;
+summary {
   font-size: 18px;
-  line-height: 180%;
+  font-family: "Museo Sans Cyrl 300", sans-serif;
   color: #006986;
-}
-
-.content-about {
-  display: flex;
-  align-items: center;
-}
-
-.block-facts-nav {
-  display: flex;
-  margin-left: 51px;
-}
-
-.block-facts {
+  cursor: pointer;
   position: relative;
-  margin-right: 62px;
-  border: 1px solid #1d7f9d;
-  border-radius: 10px;
-  width: 325px;
-  height: 163px;
-  text-align: center;
 }
 
-.block-title {
-  position: absolute;
-  margin-top: 35px;
-  margin-left: 39px;
-  width: 248px;
-  font-family: "Museo Sans Cyrl 500", sans-serif;
-  font-size: 45px;
-  color: #00465e;
-  margin-bottom: 0;
-}
-
-.block-description {
-  position: absolute;
-  margin-top: 104px;
-
-  font-family: "Museo Sans Cyrl 300", sans-serif;
-  font-size: 15px;
-  color: #00465e;
-  line-height: 140%;
-}
-
-.big-block {
-  border: 1px solid #1d7f9d;
-  border-radius: 10px;
-  width: 510px;
-  height: 163px;
-  text-align: center;
-  margin: 60px auto;
-}
-
-.big-block-title {
-  margin-top: 25px;
-  font-family: "Museo Sans Cyrl 500", sans-serif;
-  font-size: 45px;
-  color: #00465e;
-}
-
-.big-block-description {
-  margin-top: 15px;
-  font-family: "Museo Sans Cyrl 300", sans-serif;
-  font-size: 15px;
-  color: #00465e;
-  line-height: 140%;
-}
-
-.myProducts {
-  text-align: center;
-}
-
-.galleria {
-  position: absolute;
-  width: 1200px;
-  height: 700px;
-
-  border-radius: 10px;
-}
-
-.galleria img {
-  object-fit: cover;
-}
-
-#block-description-1 {
-  margin-left: 19px;
-}
-
-#block-description-2 {
-  margin-left: 51px;
+details {
+  color: #006986;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 /*FOOTER*/
@@ -342,7 +223,6 @@ header a {
 #infodesc1 {
   margin-top: 52px;
 }
-
 #infodesc2 {
   margin-top: 98px;
 }
@@ -400,7 +280,6 @@ header a {
   margin-top: 39px;
   margin-left: 222px;
 }
-
 #phone-icon {
   position: absolute;
   margin-left: 227px;
@@ -438,7 +317,6 @@ header a {
   margin-top: 62px;
   margin-right: 10px;
 }
-
 .e-mail-desc {
   position: absolute;
   margin-top: 189px;
@@ -472,7 +350,6 @@ header a {
   margin-top: 39px;
   margin-left: 1018px;
 }
-
 .nav-menu {
   position: absolute;
   margin-top: 85px;
@@ -486,12 +363,11 @@ header a {
   color: #ffffff;
   line-height: 140%;
 }
-
 .nav-menu li a:hover {
   border-bottom: 1px solid #ffffff;
 }
-
 /*FOOTER*/
+
 .popup {
   position: fixed;
   width: 100%;
@@ -582,7 +458,13 @@ header a {
   top: 8px;
   right: 8px;
 }
-
+summary {
+  padding: 12px 0;
+}
+details p {
+  padding-left: 24px;
+  line-height: 1.6;
+}
 /**************************************************   ADAPTIVE   *****************************************************/
 body {
   min-width: 320px;
@@ -849,81 +731,6 @@ body {
   .menu-nav {
     margin-top: 144px;
   }
-  .content-about {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .content-about p {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 428px;
-    width: auto;
-    height: auto;
-    flex: 1 0 50%;
-    font-size: 14px;
-    font-weight: 300;
-  }
-  #main-img-about {
-    margin: 0 auto;
-    max-width: 50%;
-    padding-right: 40px;
-    display: block;
-    height: auto;
-    flex: 0 1 50%;
-  }
-  .title {
-    max-width: 360px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    margin-top: 90px;
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 120%;
-  }
-
-  .block-facts,
-  .big-block {
-    padding: 25px 15px;
-    margin: 0 auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-  .block-facts {
-    max-width: 31%;
-  }
-  .block-facts-nav {
-    margin-left: 0;
-    margin-bottom: 30px;
-    justify-content: space-around;
-  }
-  .block-title {
-    margin: 0;
-    margin-bottom: 15px;
-    width: auto;
-    position: static;
-  }
-  .block-description {
-    margin: 0;
-    min-height: 42px;
-    position: static;
-    text-align: center;
-  }
-  #block-description-1,
-  #block-description-2,
-  #block-description-3 {
-    margin: 0;
-  }
-  .myProducts .container {
-    margin: 0 -20px;
-  }
-  .galleria {
-    max-width: 100%;
-    position: static;
-  }
 }
 
 @media (max-width: 768px) {
@@ -978,33 +785,11 @@ body {
     padding-top: 276px;
   }
   /*  */
-  .title {
-    margin-bottom: 50px;
-  }
-  .menu-nav,
-  #main-img-about {
+  .menu-nav {
     display: none;
   }
-  .content-about p {
-    width: auto;
-    font-size: 14px;
-    font-weight: 300;
-    text-align: center;
-  }
-  .block-facts-nav {
-    margin-bottom: 0;
-    flex-direction: column;
-    align-items: center;
-  }
-  .block-facts,
-  .big-block {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    padding: 25px 30px;
-    max-width: 325px;
-  }
-  .big-block-title {
-    margin: 0;
+  .questions-content {
+    margin-top: 144px;
   }
 }
 
@@ -1019,8 +804,5 @@ body {
   .header-content span {
     max-width: 288px;
     font-size: 12px;
-  }
-  .title {
-    font-size: 18px;
   }
 }
