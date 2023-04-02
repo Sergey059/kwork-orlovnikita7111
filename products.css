@@ -875,7 +875,8 @@ body {
     -o-border-radius: 10px;
     overflow: hidden;
   }
-  .list.active .side-button {
+  .list.active .side-button,
+  .list.active #b-button {
     padding-top: 22px;
     padding-bottom: 22px;
     height: auto;
